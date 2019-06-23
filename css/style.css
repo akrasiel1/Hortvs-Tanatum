@@ -17,7 +17,7 @@ body {
     width: 100%;
     position: absolute;
     background-color: rgba(36, 36, 36, 0.3);
-    height: 100%;
+    height: 100vh;
     z-index: 1;
 }
 
@@ -110,12 +110,6 @@ nav.solid img {
     height: 75px;
 }
 
-
-/* ABOUT SECTION */
-
-#about {
-    height: 1000px;
-}
 
 /* The basic structure of the animated Menu Icon */
 
