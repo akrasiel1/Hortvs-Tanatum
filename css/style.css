@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,13 +47,13 @@ nav ul li a {
     text-decoration: none;
     color: #e4e4e4;
     line-height: 140px;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 .slogan {
     color: #e4e4e4;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -78,18 +79,42 @@ nav ul li a {
     from {
         margin-top: 0;
     }
+
     to {
         margin-top: 10px;
     }
-  }
+}
 
-  /* BURGER ICON */
+/* BURGER ICON */
 
-  .icon {
+.icon {
     width: 50px;
     height: 90px;
     cursor: pointer;
     display: none;
+}
+
+/* SOLID NAVBAR */
+
+nav.solid {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #5f6b27;
+    height: 90px;
+    transition: 0.5s ease;
+}
+
+nav.solid img {
+    height: 75px;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+    height: 1000px;
 }
 
 /* The basic structure of the animated Menu Icon */
@@ -106,7 +131,8 @@ nav ul li a {
     transition: .5s
 }
 
-.structure:before, .structure:after {
+.structure:before,
+.structure:after {
     content: '';
     position: absolute;
     width: 35px;
@@ -162,6 +188,47 @@ nav ul li a {
     z-index: 2;
 }
 
+.menu-mobile a:first-child {
+    border-top: solid 1px #a8a8a8;
+}
+
+
+/* ABOUT SECTION */
+
+.container {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(75%, rgba(80, 204, 226, 0.699)), to(rgba(107, 163, 216, 0.507)));
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(80, 204, 226, 0.699) 75%, rgba(107, 163, 216, 0.507) 100%);
+}
+
+.container h1 {
+    padding: 25px 0;
+    border-bottom: solid 1px #a8a8a8;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.5em;
+}
+
+.container p {
+    width: 75%;
+    margin: auto;
+    padding: 50px 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    margin-bottom: -10px;
+}
+
 
 
 /*MEDIA QUERIES */
@@ -188,11 +255,40 @@ nav ul li a {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        position: relative;
+        position: fixed;
+        top: 90px;
+        width: 100%;
         z-index: 3;
+        transition: all 0.5 ease;
     }
 
     .slogan {
         font-size: 2.7em;
+    }
+
+    /* NAV MOBILE */
+
+    nav.mobile {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: #5f6b27;
+        height: 90px;
+        transition: all 0.5s ease;
+    }
+
+    nav.mobile img {
+        height: 85px;
+    }
+
+    /* ABOUT SECTION */
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .container p {
+        font-size: 1.1em;
     }
 }
