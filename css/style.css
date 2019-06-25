@@ -102,7 +102,7 @@ nav.solid {
     width: 100%;
     z-index: 100;
     background-color: #5f6b27;
-    height: 90px;
+    height: 80px;
     transition: 0.5s ease;
 }
 
@@ -114,8 +114,8 @@ nav.solid img {
 /* The basic structure of the animated Menu Icon */
 
 .structure {
-    width: 35px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     position: absolute;
     top: 50%;
     left: 90%;
@@ -129,8 +129,8 @@ nav.solid img {
 .structure:after {
     content: '';
     position: absolute;
-    width: 35px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     background: #e4e4e4;
     border-radius: 5px;
     transition: .5s
@@ -139,11 +139,11 @@ nav.solid img {
 /* Space between top, middle and bottom bars */
 
 .structure:before {
-    top: -12px;
+    top: -10px;
 }
 
 .structure:after {
-    top: 12px;
+    top: 10px;
 }
 
 /* Makes middle bar fade */
@@ -171,7 +171,7 @@ nav.solid img {
     width: 100%;
     color: #e4e4e4;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     list-style: none;
     margin: 0;
     padding: 15px 0 10px 0;
@@ -192,6 +192,7 @@ nav.solid img {
 .container {
     width: 100%;
     text-align: center;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(75%, rgba(80, 204, 226, 0.699)), to(rgba(107, 163, 216, 0.507)));
@@ -201,14 +202,14 @@ nav.solid img {
 .container h1 {
     padding: 25px 0;
     border-bottom: solid 1px #a8a8a8;
-    width: 75%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     font-size: 2.5em;
 }
 
 .container p {
-    width: 75%;
+    width: 50%;
     margin: auto;
     padding: 50px 0;
     font-size: 1.5em;
@@ -219,8 +220,24 @@ nav.solid img {
 .container img {
     width: 100%;
     height: auto;
-    padding-top: 50px;
+    padding-top: 120px;
     margin-bottom: -10px;
+}
+
+/* REGION SECTION */
+
+#region .container {
+    background: #e4e4e4;
+}
+
+.container .umbria {
+    width: 66%;
+    height: auto;
+    padding: 30px 0;
+}
+
+#region .container p {
+    padding-bottom: 0;
 }
 
 
@@ -233,9 +250,29 @@ nav.solid img {
     nav ul li a {
         font-size: 0.9em;
     }
+
+    .container h1 {
+        width: 75%;
+    }
+
+    .container p {
+        width: 75%;
+    }
 }
 
 @media (min-width: 0px) and (max-width: 768px) {
+
+    nav {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        background: #5f6b27;
+    }
+
+    nav img {
+        height: 75px;
+    }
+
     .icon {
         display: block;
     }
@@ -250,7 +287,7 @@ nav.solid img {
         justify-content: center;
         text-align: center;
         position: fixed;
-        top: 90px;
+        top: 80px;
         width: 100%;
         z-index: 3;
         transition: all 0.5 ease;
@@ -280,9 +317,11 @@ nav.solid img {
 
     .container h1 {
         font-size: 2em;
+        width: 75%;
     }
 
     .container p {
         font-size: 1.1em;
+        width: 75%;
     }
 }

@@ -39,16 +39,11 @@ $(document).ready(function() {
 
     /* SET SOLID NAVBAR FOR MOBILE */
 
-    $(window).resize(function() {
-        if ($(window).width() < 768) {
-           $("nav").addClass("mobile");
-        }
-       else {
-          $("nav").removeClass("mobile");
-       }
-      });
 
     /* MAKE MENU DISAPPEAR AFTER CLICKING A LINK */
-    
+    $(".menu-mobile a").click(function() {
+      $(".menu-mobile").toggleClass("block")
+      $(".icon").toggleClass("active")
+    });
     
 });
