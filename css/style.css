@@ -59,7 +59,7 @@ nav ul li a {
     width: 100%;
     z-index: 2;
     text-align: center;
-    font-size: 5em;
+    font-size: 4.5em;
     letter-spacing: 0.1em;
     font-family: 'Kaushan Script';
 }
@@ -171,21 +171,14 @@ nav.solid img {
     width: 100%;
     color: #e4e4e4;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.75em;
     list-style: none;
     margin: 0;
     padding: 15px 0 10px 0;
     background-color: #5f6b27;
-    border-bottom: solid 1px #a8a8a8;
-    text-transform: uppercase;
     position: relative;
     z-index: 2;
 }
-
-.menu-mobile a:first-child {
-    border-top: solid 1px #a8a8a8;
-}
-
 
 /* ABOUT SECTION */
 
@@ -242,27 +235,34 @@ nav.solid img {
     padding-bottom: 20px;
 }
 
-#producer .container{
+#producers .container{
     background: linear-gradient(to bottom, #e4e4e4, #5f6b27);
 }
 
-#producer img {
-    width: 33%;
+#producers img {
+    width: 45%;
     height: auto;
     border-radius: 50%;
+    padding-top: 30px;
     padding-bottom: 100px;
+}
+
+#producers h2 {
+    padding-top: 35px;
 }
 
 
 /*MEDIA QUERIES */
 
+/*===================== Responsive Styling =========================*/
+@media only screen and (max-width: 1280px) {}
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
 
     nav ul li a {
         font-size: 0.9em;
     }
-
+    
     .container h1 {
         width: 75%;
     }
@@ -274,13 +274,16 @@ nav.solid img {
     .container .umbria {
         width: 50%;
     }
+
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     nav {
         height: 80px;
         position: fixed;
+        width: 100%;
+        z-index: 10;
         top: 0;
         background: #5f6b27;
     }
@@ -303,14 +306,19 @@ nav.solid img {
         justify-content: center;
         text-align: center;
         position: fixed;
-        top: 80px;
         width: 100%;
-        z-index: 3;
+        height: 100%;
+        background-color: #5f6b27;
+        z-index: 5;
         transition: all 0.5 ease;
     }
 
     .slogan {
-        font-size: 2.7em;
+        font-size: 3.75em;
+    }
+
+    .fa-chevron-down {
+        font-size: 2.5em;
     }
 
     /* NAV MOBILE */
@@ -349,8 +357,28 @@ nav.solid img {
 
     /* PRODUCER SECTION */
 
-    #producer img {
+    #producers img {
         width: 50%;
         padding: 20px 0;
     }
 }
+
+
+@media only screen and (max-width: 667px) {
+
+    .slogan {
+        font-size: 2.85em;
+    }
+
+    .fa-chevron-down {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 568px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {}
