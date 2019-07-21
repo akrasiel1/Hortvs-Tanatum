@@ -199,14 +199,14 @@ nav.solid img {
 .container h1 {
     padding: 25px 0;
     border-bottom: solid 1px #a8a8a8;
-    width: 50%;
+    width: 66%;
     margin-left: auto;
     margin-right: auto;
     font-size: 2.5em;
 }
 
 .container p {
-    width: 50%;
+    width: 66%;
     margin: auto;
     padding: 50px 0;
     font-size: 1.5em;
@@ -241,7 +241,7 @@ nav.solid img {
 
 /*PRODUCERS SECTION */
 
-#producers .container{
+#producers .container {
     background: linear-gradient(to bottom, #e4e4e4, #5f6b27);
 }
 
@@ -255,6 +255,55 @@ nav.solid img {
 
 #producers h2 {
     padding-top: 35px;
+}
+
+/* PRODUCTS SECTION */
+
+#products {
+    background: linear-gradient(to bottom, #5f6b27, #e4e4e4);
+}
+
+#products .container {
+    background: linear-gradient(to bottom, #5f6b27, #e4e4e4);
+    width: 88%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px 20px;
+    padding: 60px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product-card img {
+    padding-top: 0;
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+.product-card h2 {
+    font-size: 1em;
+    color: #000;
+}
+
+.product-card .details {
+    color: white;
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.8em;
 }
 
 /* FOOTER */
@@ -276,7 +325,7 @@ footer h1 {
     font-size: 1.25em;
     color: #000;
     margin-bottom: 5px;
-    
+
 }
 
 .footer-menu {
@@ -295,8 +344,9 @@ footer h1 {
     list-style: none;
     padding: 2px 0;
 }
+
 .footer-menu ul li a {
-    color: #242805;
+    color: #000;
     text-decoration: none;
     font-size: 1em;
     transition: all 0.3s ease-in-out;
@@ -314,7 +364,8 @@ footer h1 {
     transition: all 0.3s ease-in-out;
 }
 
-.social-links a:hover, .footer-menu ul li a:hover {
+.social-links a:hover,
+.footer-menu ul li a:hover {
     color: #3b3b3b;
     transition: all 0.3s ease-in-out;
 }
@@ -329,14 +380,21 @@ footer a img {
 /*MEDIA QUERIES */
 
 /*===================== Responsive Styling =========================*/
-@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1280px) {
+
+        /* PRODUCTS */
+    
+        .product-container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
 
 @media only screen and (max-width: 1024px) {
 
     nav ul li a {
         font-size: 0.9em;
     }
-    
+
     .container h1 {
         width: 75%;
     }
@@ -347,6 +405,12 @@ footer a img {
 
     .container .umbria {
         width: 50%;
+    }
+
+    /* PRODUCTS */
+    
+    .product-container {
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -464,6 +528,7 @@ footer a img {
     footer p {
         font-size: 0.75em;
     }
+
     .footer-menu ul li a {
         font-size: 0.85em;
     }
@@ -472,6 +537,10 @@ footer a img {
 @media only screen and (max-width: 568px) {
     .slogan {
         font-size: 3.85em;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
     }
 }
 
