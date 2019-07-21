@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 .slogan {
-    color: #3b3b3b;
+    color: #e4e4e4;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -64,7 +64,6 @@ nav ul li a {
     font-weight: bolder;
     letter-spacing: 0.1em;
     font-family: 'Indie Flower';
-    text-shadow: 3px 3px 2px #dbdbdb;
     letter-spacing: -0.035em;
 }
 
