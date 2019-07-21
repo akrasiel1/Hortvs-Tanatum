@@ -7,7 +7,7 @@ body {
 }
 
 #home {
-    background: url(../img/header.jpg) no-repeat center;
+    background: url(../img/header.png) no-repeat left;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -24,17 +24,18 @@ body {
 nav {
     width: 100%;
     height: 140px;
-
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    transition: all 0.5 ease;
 }
 
 nav img {
     height: 120px;
+    margin-left: 15%;
 }
 
 nav ul li {
@@ -47,11 +48,11 @@ nav ul li a {
     text-decoration: none;
     color: #e4e4e4;
     line-height: 140px;
-    font-size: 1.4em;
+    font-size: 1.25em;
 }
 
 .slogan {
-    color: #e4e4e4;
+    color: #3b3b3b;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -59,9 +60,12 @@ nav ul li a {
     width: 100%;
     z-index: 2;
     text-align: center;
-    font-size: 4.5em;
+    font-size: 5em;
+    font-weight: bolder;
     letter-spacing: 0.1em;
-    font-family: 'Kaushan Script';
+    font-family: 'Indie Flower';
+    text-shadow: 3px 3px 2px #dbdbdb;
+    letter-spacing: -0.035em;
 }
 
 .fa-chevron-down {
@@ -101,7 +105,7 @@ nav.solid {
     top: 0;
     width: 100%;
     z-index: 100;
-    background-color: #5f6b27;
+    background-color: #3b3b3b;
     height: 80px;
     transition: 0.5s ease;
 }
@@ -175,9 +179,10 @@ nav.solid img {
     list-style: none;
     margin: 0;
     padding: 15px 0 10px 0;
-    background-color: #5f6b27;
+    background-color: #3b3b3b;
     position: relative;
     z-index: 2;
+    top: -15%;
 }
 
 /* ABOUT SECTION */
@@ -285,7 +290,7 @@ nav.solid img {
         width: 100%;
         z-index: 10;
         top: 0;
-        background: #5f6b27;
+        background: #3b3b3b;
     }
 
     nav img {
@@ -308,13 +313,14 @@ nav.solid img {
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: #5f6b27;
+        background-color: #3b3b3b;
         z-index: 5;
         transition: all 0.5 ease;
     }
 
     .slogan {
-        font-size: 3.75em;
+        font-size: 4.75em;
+        top: 50%;
     }
 
     .fa-chevron-down {
@@ -328,7 +334,7 @@ nav.solid img {
         top: 0;
         width: 100%;
         z-index: 100;
-        background-color: #5f6b27;
+        background-color: #3b3b3b;
         height: 90px;
         transition: all 0.5s ease;
     }
@@ -367,7 +373,7 @@ nav.solid img {
 @media only screen and (max-width: 667px) {
 
     .slogan {
-        font-size: 2.85em;
+        font-size: 4.25em;
     }
 
     .fa-chevron-down {
@@ -375,10 +381,23 @@ nav.solid img {
     }
 }
 
-@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 568px) {
+    .slogan {
+        font-size: 3.85em;
+    }
+}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .slogan {
+        font-size: 3em;
+    }
+}
 
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+    .slogan {
+        font-size: 2.35em;
+        top: 50%;
+    }
+}
 
 @media only screen and (max-width: 320px) {}
