@@ -270,6 +270,10 @@ nav.solid img {
     padding: 60px 0;
 }
 
+#products .container p {
+    width: 75%;
+}
+
 .product-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -416,7 +420,6 @@ footer a img {
 
 .product-text {
     margin-left: 35px;
-    text-align: justify;
 }
 
 .product-text p {
