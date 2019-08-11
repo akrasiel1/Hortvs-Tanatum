@@ -211,7 +211,6 @@ nav.solid img {
     padding: 50px 0;
     font-size: 1.5em;
     font-weight: lighter;
-    text-align: justify;
 }
 
 .container img {
@@ -246,7 +245,7 @@ nav.solid img {
 }
 
 #producers img {
-    width: 45%;
+    width: 50%;
     height: auto;
     border-radius: 50%;
     padding-top: 30px;
@@ -290,6 +289,7 @@ nav.solid img {
 .product-card img {
     padding-top: 0;
 }
+
 
 .product-card a {
     text-decoration: none;
@@ -577,7 +577,6 @@ footer a img {
     /* PRODUCER SECTION */
 
     #producers img {
-        height: 180px;
         padding: 20px 0;
     }
 
@@ -604,6 +603,12 @@ footer a img {
 
     .fa-chevron-down {
         font-size: 2em;
+    }
+
+    /* PRODUCERS */
+
+    #producers img {
+        width: 66%;
     }
 
     /* FOOTER */
