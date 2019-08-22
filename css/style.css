@@ -211,6 +211,7 @@ nav.solid img {
     padding: 50px 0;
     font-size: 1.5em;
     font-weight: lighter;
+    text-align: left;
 }
 
 .container img {
@@ -244,8 +245,8 @@ nav.solid img {
     background: linear-gradient(to bottom, #e4e4e4, #5f6b27);
 }
 
-#producers img {
-    width: 50%;
+#producers img, #products .truffleoil {
+    width: 33%;
     height: auto;
     border-radius: 50%;
     padding-top: 30px;
@@ -270,7 +271,7 @@ nav.solid img {
 }
 
 #products .container p {
-    width: 75%;
+    width: 100%;
 }
 
 .product-container {
@@ -296,17 +297,17 @@ nav.solid img {
 }
 
 .product-card h2 {
-    font-size: 1em;
+    font-size: 0.95em;
+    letter-spacing: -0.05em;
     color: #000;
 }
 
-.product-card .details {
+.product-card a .details {
     color: white;
     background-color: #000;
     padding: 12px 0;
     text-align: center;
     cursor: pointer;
-    width: 100%;
     font-size: 1em;
 }
 
@@ -379,6 +380,26 @@ footer a img {
     width: 35%;
     margin: auto;
     padding: 25px 0;
+}
+
+.credits {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.credits .heartbeat {
+    color: rgba(255,0,0,0.3);
+    font-size: 20px;
+    animation: heartbeat 0.8s linear alternate infinite;
+}
+
+@keyframes heartbeat {
+    from {
+        color: rgba(255,0,0,0.3);
+    }
+    to {
+        color: rgb(255,0,0);
+    }
 }
 
 /* PRODUCT PAGES */
@@ -576,7 +597,7 @@ footer a img {
 
     /* PRODUCER SECTION */
 
-    #producers img {
+    #producers img,  #products .truffleoil {
         padding: 20px 0;
     }
 
@@ -607,7 +628,7 @@ footer a img {
 
     /* PRODUCERS */
 
-    #producers img {
+    #producers img,  #products .truffleoil {
         width: 66%;
     }
 

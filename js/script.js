@@ -45,5 +45,8 @@ $(document).ready(function() {
       $(".menu-mobile").toggleClass("block")
       $(".icon").toggleClass("active")
     });
+
+     // Get the current year for the copyright
+     $('#year').text(new Date().getFullYear());
     
 });
