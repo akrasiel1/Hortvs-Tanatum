@@ -650,6 +650,11 @@ footer a img {
         font-size: 0.85em;
     }
 
+    .credits {
+        text-align: center;
+        font-size: 0.6em;
+    }
+
 }
 
 @media only screen and (max-width: 568px) {
@@ -682,6 +687,11 @@ footer a img {
 @media only screen and (max-width: 480px) {
     .slogan {
         font-size: 3em;
+    }
+
+    .credits {
+        text-align: center;
+        font-size: 0.5em;
     }
 
     /* INDIVIDUAL PRODUCTS PAGE LAYOUT */
